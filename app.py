@@ -13,7 +13,7 @@ if "true_number" not in st.session_state:
 
 # Step 1: Are you dumb?
 if not st.session_state.asked_dumb:
-    answer = st.text_input("Are you dumb? (Yes/No)").lower().strip()
+    answer = st.text_input("Are you dumb?").lower().strip()
     if st.button("Submit"):
         if answer == "yes":
             st.session_state.dumb_response = "Obviously."
